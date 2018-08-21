@@ -1,18 +1,17 @@
-{% set name = "scripting" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
-  name: {{ name|lower }}
+  name: scripting
   version: {{ version }}
 
 source:
   url: https://github.com/csdms/py-scripting/archive/v{{ version }}.tar.gz
   fn: py-scripting-{{ version }}.tar.gz
-  sha256: 7ff93a9af586c93a41808f5132f75dc58c9a383abe702c5e5a87cc95f9585670
+  sha256: 0553deae47f2970816893cecfd97f329ce0b9f78aee78f1c5ebf5773a08b6488
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
