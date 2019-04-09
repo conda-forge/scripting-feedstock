@@ -1,4 +1,4 @@
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: scripting
@@ -7,7 +7,7 @@ package:
 source:
   url: https://github.com/csdms/py-scripting/archive/v{{ version }}.tar.gz
   fn: py-scripting-{{ version }}.tar.gz
-  sha256: 0553deae47f2970816893cecfd97f329ce0b9f78aee78f1c5ebf5773a08b6488
+  sha256: 78b70070acdf6feea477a70c572341453b1b047b6d4697c2150b63da352d8ba3
 
 build:
   noarch: python
